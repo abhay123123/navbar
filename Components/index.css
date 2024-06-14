@@ -1,0 +1,57 @@
+.header{
+    background:transparent;
+    position:fixed;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navbar a{
+    position: relative;
+    margin-right: 50px;
+    justify-content: space-around;
+    color:white;
+}
+
+.logo{
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+    margin-right: auto;
+   
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-image:url('https://wpamelia.com/wp-content/uploads/2019/01/Screenshot_187.jpg');
+    background-size: cover;
+
+    /* Fix the image in place */
+    background-attachment: fixed;
+
+    /* Center the background image */
+    background-position: center;
+
+    /* Ensure the image is not repeated */
+    background-repeat: no-repeat;
+
+}
